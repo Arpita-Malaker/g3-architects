@@ -5,6 +5,9 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+/* =========================
+                            header========================= */
+
 
 .top{
     background-color: antiquewhite;
@@ -24,12 +27,7 @@
     justify-content: space-between;
     margin: 0 auto;
     padding: 10px auto;
-
 }
-
-
-
-
 
 .nav-item{
   
@@ -40,7 +38,7 @@
 }
 
 
-
+/* ========================main heading with brand name==================== */
 
 .header-info{
 
@@ -63,7 +61,7 @@
     padding-top: 10px;
     padding-bottom: 20px;
 }
-
+/* -------------------------explore button----------------------- */
 .explore-btn{
     width: 150px;
     height: 50px;
@@ -72,6 +70,8 @@
     background-color: #FF900E;
     color: white;
 }
+
+/* =============================main big images===================== */
 
 .main-img img{
  
@@ -84,7 +84,7 @@
     padding-bottom: 20px;
 }
 
-
+/* =============================== 4 images in greid layout=============== */
 
 .images img{
 
@@ -92,11 +92,14 @@
     height: 200px;
 
 }
+
 .images{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 10px;
 }
+
+/* =============================feature section side of the 4 images part ============ */
 
 .features{
     display: flex;
@@ -123,6 +126,9 @@
 
 }
 
+
+/* =============================section of love and care========================== */
+
 .love-title{
     font-style: normal;
     font-weight: 700;
@@ -146,8 +152,6 @@
     height: 650px;
 }
 
-
-
 .card{
     border-radius: 5px;
     width: 400px;
@@ -158,6 +162,8 @@
     margin-bottom: 20px;
    
 }
+
+/* --------------------------experien button---------------------------- */
 
 .experience-btn{
     font-weight: 700;
@@ -181,6 +187,7 @@
     font-size: 30px;
 }
 
+/* =========================some fact section===================== */
 .Some-Facts{
     padding-left: 150px;
     padding-bottom: 50px;
@@ -190,7 +197,7 @@
     padding-top: 20px;
     width: 150px;
     height: 130px;
- text-align: center;
+    text-align: center;
     border: 1px solid #FF900E;
     border-radius: 8px;
    
@@ -203,6 +210,8 @@
     padding-left: 150px;
     padding-right: 150px;
 }
+
+/* ------------------------hover efect on 4 box------------------ */
 
 .icon:hover{
    
@@ -223,6 +232,8 @@
     100% {background-color: rgb(201, 23, 127);}
   }
 
+  /* -------------------------------contact part and this is the bonum part--------------------- */
+
   .contact{
     background-color: bisque;
     padding: 100px 150px;
@@ -239,6 +250,9 @@
     border-radius: 5px;
     background-color: #FF900E;
    }
+
+
+   /* ======================sponsers  part=================================== */
   .sponspors{
     padding-top: 50px;
     text-align: center;
@@ -257,6 +271,8 @@
     filter: grayscale(100%);
   }
 
+  /* =======================footer part===================== */
+
   footer{
     background-color: antiquewhite;
     text-align: center;
@@ -271,60 +287,71 @@
 
   @media only screen and (max-width:688px )  {
 
-    .header-info{
-        padding: 0px;
-        padding-right: 50PX;
-    }
+    /* ----------header part---------- */
+
     .top{
         margin: 0;
         width: 1200PX;
       background-color: antiquewhite;
     }
+
+    .header-info{
+        padding: 0px;
+        padding-right: 50PX;
+    }
+
+    /* -----------main big image---------- */
+    
     .main-img{
         padding-left: 150px;
     }
 
+    /*  --------------- for navbar---------- */
     .nav,.nav-item, .nav-title{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         text-align: left;
     }
    
-    .features{
-       display: list-item;
-             }
+   /* ----- 4 group  images now in 4 row-------- */
 
     .images{
        padding-left: 100px;
-      
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-
     .images img{
         width: 500px;
-        /* height: 100%; */
+       
+        height: 100%;
     }
 
+    /* --------feature part of side the images now bottom of images------ */
+
     .features{
+        display: list-item;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+
+/* -----------love and care part--------- */
 
     .love-enjoy{
         padding-left: 300px ;
-       
         display: grid;
         grid-template-columns: repeat(1,1fr);
     
     }
    
-
+/* ----------some fact----------  */
     .Some-Facts{
+        margin-top: 50px;
       margin-left: 300px ; 
       width: 400px;
     
     }
+
+    /* ----------icon with box now in column with big width--------- */
 
     .icons-section{
         display: grid;
@@ -339,12 +366,16 @@
 
     }
 
+
+   
+    /* ------------contact with new style with white box------------- */
+
     .contact{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         gap: 50px;
         width: 100%;
-        margin-left: 150px;
+        margin-left: 200px;
         padding-left: 200px;
         text-align: center;
        
@@ -357,7 +388,7 @@
      
        
     }
-
+/* -------------- 5 sponser black white pic now in 2 row------------- */
     .sponspors{
         padding-left: 400px;
         width: 100%;
@@ -371,15 +402,28 @@
         margin-left: 600px;
      }
 
+     /* ------footer----------- */
+
 footer{
-    margin-left: 300px;
+    margin-left: 400px;
         width: 100%;
 
 }
 
-   
-    
-   
+/* -----------experience button now bottom of img---------- */
 
+.experience-btn{
+    font-weight: 700;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    top:10px;
+   left: 150px;
+    position: relative;
+    color: white;
+}
 
   }
